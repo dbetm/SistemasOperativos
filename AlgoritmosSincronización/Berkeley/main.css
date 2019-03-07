@@ -128,6 +128,11 @@ h1 {
     padding: 3px;
 }
 
+#btnSincronizar:disabled, #btnAgregarEsclavo:disabled {
+    cursor: not-allowed;
+    color: #b1b1b1;
+}
+
 #btnSincronizar {
     background-color: #14886c;
     color: #fff;

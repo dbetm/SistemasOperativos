@@ -206,5 +206,7 @@ function sincronizar() {
             diferencias[i].children[0].innerHTML = dif + " seg";
             diferencias[i].classList.add("oculto");
         }
+        var divPromedio = document.getElementById("promedio");
+        divPromedio.classList.add("oculto");
     }
 }
