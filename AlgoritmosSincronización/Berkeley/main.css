@@ -1,0 +1,144 @@
+html {
+    background-image: url("background.png");
+    background-attachment: fixed;
+}
+
+body {
+    width: 90%;
+    /* border: 1px solid #000000; */
+    margin: 15px auto;
+    text-align: center;
+}
+
+@font-face {
+    font-family: digital;
+    src: url("DS-DIGIT.TTF");
+}
+
+section {
+    margin: 15px auto;
+}
+
+section > div {
+    margin: 0px auto;
+}
+
+h1 {
+
+}
+
+.reloj {
+    height: 50px;
+    width: 200px;
+    background-color: #0a0a0a;
+    padding: 0px;
+    line-height: 50px;
+}
+
+.reloj, .diferencia {
+    box-shadow: 2px 3px 2px #616261;
+}
+
+.diferencia {
+    width: 200px;
+    border: 1px solid #3b8f7b;
+    height: 30px;
+    line-height: 0px;
+    background-color: #125a67;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.tiempo {
+    font-size: 40px;
+    color: red;
+    font-family: digital, serif;
+    margin: 0px;
+}
+
+.umbral {
+    margin: 25px auto;
+}
+
+#umbral {
+    width: 100px;
+    color: #be2f16;
+    border: none;
+    box-shadow: 3px 3px 3px #616261;
+    outline: none;
+}
+
+.umbral label, .umbral input {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.opciones {
+    margin-top: 20px;
+    display: flex;
+}
+
+.opciones button {
+    flex-grow: 1;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#esclavos > div {
+    display: inline-block;
+}
+
+.esclavo > div {
+    margin: 0px auto;
+}
+
+.esclavo .tiempo {
+    color: #00cfc2;
+}
+
+.num {
+    width: 15px;
+    font-size: 1em;
+    margin: 1px auto;
+    background: #9c1010;
+    color: #fff;
+    border-radius: 100%;
+}
+
+.oculto {
+    display: none;
+}
+
+.visible {
+    display: inherit;
+}
+
+#promedio {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#btnSincronizar, #btnAgregarEsclavo, #btnReiniciar {
+    border-radius: 22px;
+    border: none;
+    box-shadow: 1px 1px 1px #464646;
+    outline: none;
+    font-weight: bold;
+    padding: 3px;
+}
+
+#btnSincronizar {
+    background-color: #14886c;
+    color: #fff;
+}
+
+#btnAgregarEsclavo {
+    background-color: #43199a;
+    color: #fff;
+}
+
+#btnReiniciar {
+    background-color: #0f75a7;
+    color: #fff;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Algoritmo de Berkeley</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="Concurrent.Thread.js"></script>
+        <script src="app.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <h1>Algoritmo de Berkeley</h1>
+        <section>
+            <h4>Maestro</h4>
+            <div class="reloj">
+                <p class="tiempo" id="maestro">--:--:--</p>
+            </div>
+            <div class="diferencia">
+                <p id="diferencia-maestro">##</p>
+            </div>
+            <div class="umbral">
+                <label for="umbral">Umbral (seg): </label>
+                <input id="umbral" type="number" name="umbral" value="100" min="60">
+            </div>
+            <div id="promedio" class="oculto">
+            </div>
+            <div class="opciones">
+                <button id="btnReiniciar" type="button" name="reiniciar" onclick="reiniciar();">
+                    Reiniciar
+                </button>
+                <button id="btnAgregarEsclavo" type="button" name="agregarEsclavo" onclick="agregarEsclavo();">
+                    Agregar esclavo
+                </button>
+                <!-- No agregar espacios (al inicio o final) al texto del botón -->
+                <button id="btnSincronizar" type="button" name="sincronizar" onclick="sincronizar();">Go!</button>
+            </div>
+        </section>
+        <section id="esclavos">
+            <!-- <div class="esclavo" id="esclavo-1">
+                <p class="num">1</p>
+                <div class="reloj">
+                    <p class="tiempo">14:26:24</p>
+                </div>
+                <div class="diferencia">
+                    <p>0 seg</p>
+                </div>
+            </div> -->
+        </section>
+
+        <script type="text/javascript">
+            var nodos = [];
+            var maestro = Concurrent.Thread.create(lanzarMasterTimeDaemon);
+            nodos.push(maestro);
+        </script>
+    </body>
+</html>
