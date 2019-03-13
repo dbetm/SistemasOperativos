@@ -145,8 +145,8 @@ function sincronizar() {
     if(document.getElementsByClassName("esclavo").length == 0) return;
 
     if(estado.firstChild.nodeValue == "Go!") {
-        // Deshabilitar el botón de agregar esclavo
-        document.getElementById("btnAgregarEsclavo").disabled = true;
+        // Ocultar el botón de agregar esclavo
+        document.getElementById("btnAgregarEsclavo").setAttribute("class", "oculto");
         // Cambiar el nombre del botón
         estado.innerHTML = "Promediar";
         // Hacer visibles las diferencias de cada esclavo respecto del maestro
