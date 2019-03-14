@@ -1,0 +1,106 @@
+body{
+    text-align:center;
+}
+button{
+    outline:none;
+    background-color: #ffff;
+    border: 0;
+}
+#processList{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.titulo{
+    background-color: #e3b3af;
+}
+.left{
+    padding-top: 20px;
+    width: 60%;
+    float:left;
+}
+.rigth{
+    padding-top: 40px;
+    width: 40%;
+    float:right;
+}
+.process{
+    width: 100px;
+    padding-left: 80px;
+    padding-bottom: 100px;
+    border-color: #773d4a;
+    margin-right:auto;
+    justify-content:center;
+    text-align:center;
+    display:inline-block
+}
+.increase{
+    height: 30px;
+    width: 90px;
+    padding-top: 10px;
+    border-style: solid;
+    border-radius: 100px;
+    border-color: #773d4a;
+    background-color: #a0d6da;
+    margin: 0 auto;
+    text-align: left;
+    text-align:center;
+}
+.timesTable{
+    width: 60%;
+    border-style: solid;
+    border-spacing: 0px;
+    border-width: 1px;
+    border-color: #773d4a;
+    background-color: #a0d6da;
+    margin: 0 auto;
+    text-align: left;
+    text-align:center;
+}
+.timesTable tr{
+    text-align:center
+}
+.timesTable td{
+    border-style: solid;
+    border-spacing: 0px;
+    border-width: 1px;
+    border-color: #773d4a;
+    text-align:center
+}
+.check{
+    height: 25px;
+    width: 80px;
+    border-style: solid;
+    border-radius: 100px;
+    border-color: #773d4a;
+    background-color: #a0d6da;
+    margin: 0 auto;
+    text-align:center;
+}
+.keypad{
+    padding-left: 80px;
+    margin: 0 auto;
+    text-align:center;
+}
+.log{
+    width: 60%;
+    margin:0px auto;
+    border-style: solid;
+    border-color: #773d4a;
+}
+.log textarea{
+    padding-top: 10px;
+    font-size:9px;
+    resize: none;
+    border: 0;
+}
+@-webkit-keyframes blinker {
+  from {opacity: 1.0; font-size:15px}
+  to {opacity: 0.0;font-size:20px}
+}
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+}
