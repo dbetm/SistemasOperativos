@@ -8,8 +8,82 @@
         <!-- Scripts de JavaScript -->
         <script src="js/proceso.js" charset="utf-8"></script>
         <script src="js/main.js" charset="utf-8"></script>
+        <script src="js/index.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="css/index.css">
+
     </head>
     <body>
-        <h1>Algoritmo de sincronización: Lamport</h1>
+        <div class="titulo">
+            <h1 align="center">Algoritmo de sincronización: Lamport</h1>
+        </div>
+        <div class="left">
+            <div class="keypad">
+                <p>Añadir proceso</p>
+                <button onclick="addProcess();"><img src="imagenes/añadir.png" alt="x" /></button>
+            </div>
+            <section id="processList">
+                <!--
+                <div class="process">
+                    <div class="increase">
+                        <span class="blink">+1</span>
+                    </div>
+                    <div class="times">
+                        <table class="timesTable">
+                            <tr>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="check">
+                         <input type="checkbox" name="vehicle" value="Bike">
+                    </div>
+                </div>
+                -->
+            </section>
+        </div>
+        <div class="rigth">
+            <p>Log de envios</p>
+            <div class="log">
+                <textarea width="100%" rows="10" cols="50" readonly >
+Algoritmo de sincronizacion Lamport
+Equipo conformado por:
+*David Betancourt Montellano
+*Onder Francisco Campos Garcia
+*Carlos Escobar Gonzales
+                </textarea>
+            </div>
+        </div>
+
+
     </body>
 </html>
