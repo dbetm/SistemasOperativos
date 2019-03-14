@@ -1,20 +1,25 @@
-// Constructor
-var Proceso = function() {
-    console.log("Se ha instanciado un proceso");
-    this.contador = 0;
-    this.aumento = 2;
-};
+function proceso(name) {
+    var obj = {};
+    obj.name = name;
+    obj.contador = 0;
+    obj.greeting = function() {
+        console.log(this.name);
+    };
 
-// Arrancar proceso
-Proceso.prototype.iniciar = function() {
-    Concurrent.Thread.create(this.correr);
-};
+    obj.actualizarProceso = function() {
+        console.log(this.contador);
+        this.contador += 2;
+    };
 
-Proceso.prototype.correr = function() {
-    setInterval(this.actualizarProceso, 1000);
-};
+    obj.correr = function() {
+        console.log("CORRIENDO");
 
-Proceso.prototype.actualizarProceso = function() {
-    console.log(this.contador);
-    this.contador += this.aumento;
-};
+    };
+
+    obj.iniciar = function() {
+        console.log("iNICIANDO");
+        var my_thread = new MRlib323.Thread(runnable);
+    };
+
+    return obj;
+}

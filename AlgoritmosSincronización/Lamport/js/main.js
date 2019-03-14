@@ -1,2 +1,2 @@
-var p = new Proceso();
-p.iniciar();
+var salva = proceso('p1');
+salva.iniciar();
