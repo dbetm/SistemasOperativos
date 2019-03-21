@@ -11,7 +11,9 @@ button{
     padding-bottom: 20px;
 }
 .titulo{
-    background-color: #e3b3af;
+    background-color: #076b79;
+    font-weight: bold;
+    color: #fff;
 }
 .left{
     padding-top: 20px;
@@ -66,8 +68,8 @@ button{
     border-color: #773d4a;
     text-align:center
 }
-.check{
-    height: 25px;
+.check {
+    height: 35px;
     width: 80px;
     border-style: solid;
     border-radius: 100px;
@@ -76,6 +78,11 @@ button{
     margin: 0 auto;
     text-align:center;
 }
+
+.check > input {
+    cursor: pointer;
+}
+
 .keypad{
     padding-left: 80px;
     margin: 0 auto;
@@ -103,4 +110,48 @@ button{
 	-webkit-animation-duration: 1s;
 	-webkit-animation-iteration-count:infinite;
 	-webkit-animation-timing-function:ease-in-out;
+}
+
+.label-envio {
+    margin: 0px;
+    font-size: 0.8em;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+#envio-mensaje {
+    margin-top: 15px;
+    font-size: 1.2em;
+    float: right;
+    padding-right: 100px;
+}
+
+#btnEnviar {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 13px;
+    width: 140px;
+    background-color: #e7e4e4;
+    color: #000;
+    font-size: 17px;
+}
+
+#txtMensaje {
+    display: block;
+    font-size: 1.1em;
+    padding: 3px;
+    margin-top: 9px;
+    width: 300px;
+    color: #901f0b;
+}
+
+.tag-id {
+    margin: 0px;
+    color: green;
 }

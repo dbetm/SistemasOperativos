@@ -4,13 +4,11 @@
         <meta charset="utf-8">
         <title>Lamport</title>
         <!-- hojas de estilo -->
-        <script src="../libs/Concurrent.Thread.js"></script>
-        <!-- Scripts de JavaScript -->
-        <script src="js/proceso.js" charset="utf-8"></script>
-        <script src="js/main.js" charset="utf-8"></script>
-        <script src="js/index.js" charset="utf-8"></script>
         <link rel="stylesheet" href="css/index.css">
-
+        <!-- Scripts de JavaScript -->
+        <script src="../libs/Concurrent.Thread.js"></script>
+        <script src="js/proceso.js" charset="utf-8"></script>
+        <script src="js/index.js" charset="utf-8"></script>
     </head>
     <body>
         <div class="titulo">
@@ -18,8 +16,8 @@
         </div>
         <div class="left">
             <div class="keypad">
-                <p>Añadir proceso</p>
-                <button onclick="addProcess();"><img src="imagenes/añadir.png" alt="x" /></button>
+                <p>Nuevo proceso</p>
+                <button onclick="addProcess();"><img src="img/añadir.png" alt="x" /></button>
             </div>
             <section id="processList">
                 <!--
@@ -72,18 +70,19 @@
             </section>
         </div>
         <div class="rigth">
-            <p>Log de envios</p>
+            <p>Logging</p>
             <div class="log">
-                <textarea width="100%" rows="10" cols="50" readonly >
-Algoritmo de sincronizacion Lamport
-Equipo conformado por:
-*David Betancourt Montellano
-*Onder Francisco Campos Garcia
-*Carlos Escobar Gonzales
+                <textarea id="logging" width="100%" rows="10" cols="50" readonly>
+Equipo:
+    0x00 David Betancourt Montellano
+    0x01 Onder Francisco Campos Garcia
+    0x02 Carlos Escobar González
                 </textarea>
             </div>
         </div>
-
-
+        <div id="envio-mensaje" class="invisible">
+            <button id="btnEnviar" type="button" name="button" onclick="enviarMensaje();">Enviar mensaje</button>
+            <input id="txtMensaje" type="text" name="mensaje" value="" placeholder="Escribe tu mensaje">
+        </div>
     </body>
 </html>
