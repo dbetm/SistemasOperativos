@@ -2,9 +2,36 @@
     margin: 0px;
     padding: 0px;
 }
-
+button{
+    outline:none;
+    background-color: #ffff;
+    border: 0;
+}
 body {
     text-align: center;
     margin: 15px;
     border: 1px solid #000000;
+}
+.grupo{
+    width: 40%;
+    display:inline-block;
+    justify-content:center;
+    text-align:center;
+}
+.figura{
+     width: 90%;
+     height: 400px;
+     margin: 0 auto;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #5cb85c;
+     text-align:center;
+}
+.miembro{
+    justify-content:center;
+    text-align:center;
+    display:inline-block;
+    padding-top: 50px;
+    padding-right: 50px;
 }
