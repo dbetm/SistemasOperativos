@@ -75,7 +75,7 @@ function agregarMiembro(idGrupo){
             miembro.setAttribute("id",idm);
             miembro.setAttribute("class", "miembro");
             miembro.setAttribute("style", "position: relative; "+pos);
-            miembro.setAttribute("onclick","myFunction(this)");
+            miembro.setAttribute("onclick","myFunction(this,'Ya no tengo sueño')");
             //Pacman
             var imagen = document.createElement("IMG");
             var idm = "imagenPac-" + (grupo.childElementCount+1);
@@ -101,9 +101,10 @@ function agregarMiembro(idGrupo){
     }
 
 }
-function myFunction(idBoton) {
+function myFunction(idBoton,texto) {
   var id = idBoton.id;
   id = id.split("-");
   var popup = document.getElementById("popup-"+id[1]+"-"+id[2]);
+  popup.innerHTML = texto;
   popup.classList.toggle("show");
 }
