@@ -57,21 +57,53 @@ function agregarMiembro(idGrupo){
     var radio = grupo.clientWidth;
     var numMiembros = grupo.childElementCount;
     if(numMiembros<4){
-
+            var pos = " ";
+            if(numMiembros==0){
+                pos = "top:100px; left: -100px;"
+            }else if(numMiembros==1){
+                pos = "top:100px; left: 100px;"
+            }
+            else if(numMiembros==2){
+                pos = "top:200px; left: -100px;"
+            }
+            else if(numMiembros==3){
+                pos = "top:200px; left: 100px;"
+            }
             //Div de pacman
             var miembro = document.createElement("div");
             var idm = "miembro-"+idG+"-"+ (grupo.childElementCount+1);
             miembro.setAttribute("id",idm);
             miembro.setAttribute("class", "miembro");
+            miembro.setAttribute("style", "position: relative; "+pos);
+            miembro.setAttribute("onclick","myFunction(this)");
             //Pacman
             var imagen = document.createElement("IMG");
             var idm = "imagenPac-" + (grupo.childElementCount+1);
             imagen.setAttribute("id", idm);
             imagen.setAttribute("src", "img/pacman.png");
             miembro.appendChild(imagen);
+            //Se añade el popup
+
+           	var divPopup = document.createElement("div");
+           	var idp = "divPopup-"+idG+"-"+ (grupo.childElementCount+1);
+           	divPopup.setAttribute("id",idp);
+           	divPopup.setAttribute("class","popup");
+            divPopup.setAttribute("onclick","myFunction()");
+            miembro.appendChild(divPopup);
+
+            var popup = document.createElement("span");
+            var idp = "popup-"+idG+"-"+ (grupo.childElementCount+1);
+            popup.setAttribute("id",idp);
+            popup.setAttribute("class","popuptext");
+            popup.innerHTML = "Tengo sueño"; //En esta parte de aquí se puede editar el mensaje
+            divPopup.appendChild(popup);
             grupo.appendChild(miembro);
-
-
     }
 
+}
+function myFunction(idBoton) {
+  var id = idBoton.id;
+  id = id.split("-");
+  var popup = document.getElementById("popup-"+id[1]+"-"+id[2]);
+  popup.classList.toggle("show");
 }
