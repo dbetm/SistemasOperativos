@@ -5,10 +5,13 @@
         <title>Grupos cerrados</title>
         <!-- Hojas de estilo CSS3 -->
         <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <!-- Scripts de JS -->
         <script src="js/master.js" charset="utf-8"></script>
     </head>
     <body>
-        <h1>Esquema de multitransmisión básicos: Grupos cerrados</h1>
+        <h1 id="tituloPrincipal">Esquemas de multitransmisión básicos: Grupos cerrados</h1>
+        <br>
         <div class="controles">
             <p>Añadir grupo</p>
             <button onclick="agregarGrupo();"><img src="img/añadir.png" alt="x" /></button>
@@ -27,5 +30,37 @@
                 <button onclick="agregarMiembro();"><img src="img/añadirA.png" alt="x" /></button>
             </div>-->
         </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Envío de mensaje</h2>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <br>
+                        <input id="mensaje" type="text" name="mensaje" value="" placeholder="Escribe tu mensaje">
+                        <input id="envioIndividual" type="checkbox" name="envio individual" value=""> Individual
+                        <select id="destinatarios" class="" name="destinatarios" disabled="true">
+                            <option value="1">Miembro 1</option>
+                            <option value="2">Miembro 2</option>
+                            <option value="3">Miembro 3</option>
+                        </select>
+                        <br>
+                    </p>
+                    <p>
+                        <br>
+                        <input id="btnEnviarMensaje" type="button" name="botón envío" value="Enviar mensaje" onclick="enviarMensaje();">
+                        <br>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <h3 id="modal-footer-info">Soy del grupo #</h3>
+                </div>
+            </div>
+        </div>
+        <script src="js/envioMensaje.js" charset="utf-8"></script>
     </body>
 </html>
