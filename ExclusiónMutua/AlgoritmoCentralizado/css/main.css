@@ -3,15 +3,127 @@
     padding: 0px;
 }
 
+button {
+    outline:none;
+    background-color: #ffff;
+    border: 0;
+}
+
+div {
+    padding: 7px;
+}
+
+.figura {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
+    text-align:center;
+}
+
+.frame {
+    z-index: 1;
+    width: 90%;
+    height: 380px;
+    margin: 25px auto;
+    text-align:center;
+    border-radius: 20px;
+    box-shadow: gray 0.01em 0.5em 0.5em 0.3em;
+    align-self: center;
+    vertical-align: center;
+}
+
+.dataSquare {
+    width: 30%;
+    height: 105px;
+    margin: 0 auto;
+    background:  hsl(221, 61%, 75%);
+    text-align:left;
+    box-shadow: gray 0.1em 0.1em 0.01em;
+}
+
+.info {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.proceso {
+    width: 20%;
+    height: 100px;
+    margin: 25px auto;
+    background: rgb(254,254,0);
+    font: condensed 150% sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proceso-coordinador {
+    width: 40%;
+    height: 100px;
+    margin: 45px auto;
+    background: rgb(187,22,142);
+    font: condensed 150% sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
     padding: 10px;
     text-align: center;
+    padding-top: 0px;
+}
+
+h3 {
+    padding: 10px;
+    text-align: left;
+    color: #022B6F;
+    font: condensed 130% sans-serif;
+    width: 70%;
+}
+
+table {
+    font-family: "Lucida Sans Unicode",  Sans-Serif;
+    font-size: 16px;
+    margin: 7px;
+    text-align: center;
+    border: 1px solid;
+    color: #002157;
+    align-content: right;
+}
+
+td {
+    border: 0.5px solid;
+    color: #002157;
 }
 
 #titulo {
-    margin: 7px auto;
+    margin: 2px auto;
     background-color: rgba(142, 0, 59, 0.8);
     color: #f0f0f0;
     text-shadow: 2px 1px 2px #666666;
-    padding: 5px;
+    padding: 3px;
+}
+
+#asignacion-id {
+    border: 1px solid #303030;
+    width: 30px;
+    height: 30px;
+    margin: 0px auto;
+    padding: 2px;
+}
+
+#coordinador {
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.boton {
+    padding: 3px;
 }

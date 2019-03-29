@@ -5,10 +5,64 @@
         <title>Algoritmo centralizado</title>
         <!-- Se agregan las hojas de estilo -->
         <link rel="stylesheet" href="css/main.css">
-        <!-- Se agregan los archivos JS -->
-        <script src="js/app.js" charset="utf-8"></script>
     </head>
     <body>
         <h1 id="titulo">Exclusión mutua: Algoritmo centralizado</h1>
+        <h2 style="font: condensed 150% sans-serif;">Recurso:</h2>
+    	<div class="dataSquare">
+    		<div class="info">
+    			<h3>Cola:</h3>
+	            <table id="cola" border cellpadding="10" cellspacing="0" style="width: 400px;">
+	                <tr>
+						<td>NA</td>
+						<td>NA</td>
+						<td>NA</td>
+                        <td>NA</td>
+	  				</tr>
+	  			</table>
+			</div>
+            <div class="info">
+                <h3>Acceso asignado a:</h3>
+                <p id="asignacion-id">#</p>
+            </div>
+        </div>
+        <div class = "frame" id="procesos">
+            <div class="info">
+            	<div id="coordinador" class="proceso-coordinador"> Proceso no.3 <br> "Coordinador"</div>
+            	<img src="img/upiiz_logo - chico.png" width="175px" height="175px">
+        	</div>
+        	<div class="info">
+	            <div id="0" class="proceso">
+                    <p>Proceso no. 0</p>
+                    <p>
+                        <input class="boton" type="button" name="" value="Solicitar" onclick="hacerPeticion(this)">
+                        <input class="boton" type="button" name="" value="Liberar" disabled="true" onclick="liberar(this)">
+                    </p>
+                </div>
+	            <div id="1" class="proceso">
+                    <p>Proceso no. 1</p>
+                    <p>
+                        <input class="boton" type="button" name="" value="Solicitar" onclick="hacerPeticion(this)">
+                        <input class="boton" type="button" name="" value="Liberar" disabled="true" onclick="liberar(this)">
+                    </p>
+                </div>
+	            <div id="2" class="proceso">
+                    <p>Proceso no. 2</p>
+                    <p>
+                        <input class="boton" type="button" name="" value="Solicitar" onclick="hacerPeticion(this)">
+                        <input class="boton" type="button" name="" value="Liberar" disabled="true" onclick="liberar(this)">
+                    </p>
+                </div>
+                <div id="4" class="proceso">
+                    <p>Proceso no. 4</p>
+                    <p>
+                        <input class="boton" type="button" name="" value="Solicitar" onclick="hacerPeticion(this)">
+                        <input class="boton" type="button" name="" value="Liberar" disabled="true" onclick="liberar(this)">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Se agregan los archivos JS -->
+        <script src="js/app.js" charset="utf-8"></script>
     </body>
 </html>
