@@ -62,7 +62,7 @@ function enviarMensaje() {
     modal.style.display = "none";
 }
 
-function abrirModal(imgMiembro) {
+function abrirModal(imgMiembro){
     var divPadre = imgMiembro.parentElement;
     var idPadre = divPadre.id;
     var idGrupo = idPadre.split("-")[1];

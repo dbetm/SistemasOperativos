@@ -33,21 +33,7 @@ function agregarGrupo(){
     //Se añade todo
     listaGrupos.appendChild(divGrupo);
 }
-function getAbsoluteElementPosition(element) {
-  if (typeof element == "string")
-    element = document.getElementById(element)
 
-  if (!element) return { top:0,left:0 };
-
-  var y = 0;
-  var x = 0;
-  while (element.offsetParent) {
-    x += element.offsetLeft;
-    y += element.offsetTop;
-    element = element.offsetParent;
-  }
-  return {top:y,left:x};
-}
 function agregarMiembro(idGrupo){
     var id = idGrupo.id;
     id = id.split("-");
@@ -76,6 +62,18 @@ function agregarMiembro(idGrupo){
         miembro.setAttribute("class", "miembro");
         miembro.setAttribute("style", "position: relative; "+pos);
         //miembro.setAttribute("onclick","myFunction(this,'Ya no tengo sueño')");
+        var eliminar = document.createElement("div");
+        var idm = "btnEliminar-"+idG+"-"+ (grupo.childElementCount+1);
+        eliminar.setAttribute("id",idm);
+        eliminar.setAttribute("onclick", "eliminar(this);");
+        miembro.appendChild(eliminar);
+        //Imagen
+        var imgEliminar = document.createElement("IMG");
+        var idm = "imgEliminar-" + (grupo.childElementCount+1);
+        imgEliminar.setAttribute("id", idm);
+        imgEliminar.setAttribute("src", "img/x-button.png");
+        imgEliminar.setAttribute("class", "pacman");
+        eliminar.appendChild(imgEliminar);
         //Pacman
         var imagen = document.createElement("IMG");
         var idm = "imagenPac-" + (grupo.childElementCount+1);
@@ -106,4 +104,9 @@ function agregarMiembro(idGrupo){
 
 function myFunction(popup) {
     popup.classList.toggle("show");
+}
+function eliminar(idThis){
+    var divVisAbuelo = idThis.parentElement.parentElement;
+    var divAbuelo = idThis.parentElement;
+    divVisAbuelo.removeChild(divAbuelo);
 }
