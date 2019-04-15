@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    padding: 10px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.titulo {
+    margin: 2px auto;
+    background-color: rgba(142, 0, 59, 0.8);
+    color: #f0f0f0;
+    text-shadow: 2px 1px 2px #666666;
+    padding: 3px;
+}
+
+#main {
+    margin: 10px auto;
+    height: 500px;
+    width: 500px;
+}
+
+.proceso {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    border-radius: 13px;
+}
+
+/* Estilos de los procesos */
+#p-0 {
+    background-color: #3D1308;
+    top: 90px;
+    left: 490px;
+}
+
+#p-1 {
+    background-color: #050517;
+    top: 90px;
+    left: 730px;
+}
+
+#p-2 {
+    background-color: #7B0D1E;
+    top: 280px;
+    left: 820px;
+}
+
+#p-3 {
+    background-color: #9F2042;
+    top: 440px;
+    left: 620px;
+}
+
+#p-4 {
+    background-color: #065752;
+    top: 280px;
+    left: 410px;
+}
+
+.id {
+    font-weight: bold;
+    color: white;
+}
+
+.accion {
+    background: none;
+    border: none;
+    cursor: crosshair;
+    color: white;
+}
+
+.accion:hover {
+    color: #8ec70f;
+}
