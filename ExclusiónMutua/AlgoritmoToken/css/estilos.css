@@ -7,6 +7,9 @@ body {
     padding: 10px;
     text-align: center;
     padding-top: 0px;
+    background-image: url("../img/logo_upiiz.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .titulo {
@@ -15,6 +18,39 @@ body {
     color: #f0f0f0;
     text-shadow: 2px 1px 2px #666666;
     padding: 3px;
+}
+
+.info {
+    margin: 5px auto;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.info li {
+    list-style: none;
+    display: inline;
+    height: 32px;
+    width: 100px;
+    background-color: #000;
+    border: 1px solid white;
+    padding: 2px;
+    margin: 4px;
+    box-shadow: 1px 2px 2px #393939;
+    border: none;
+}
+
+#requested {
+    background-color: rgba(122, 195, 17, 0.77);
+}
+
+#failed {
+    background-color: gray;
+}
+
+#accessed {
+    background: rgb(182, 159, 36);
 }
 
 #main {
@@ -75,4 +111,23 @@ body {
 
 .accion:hover {
     color: #8ec70f;
+}
+
+.noDisponible {
+    cursor: not-allowed;
+    color: #cccccc;
+}
+
+.solicitado {
+    background-color: rgba(122, 195, 17, 0.77) !important;
+}
+
+.fallando {
+    background-color: #d93307;
+    background: gray !important;
+    font-style: italic;
+}
+
+.seleccionado {
+    background: rgb(182, 159, 36) !important;
 }

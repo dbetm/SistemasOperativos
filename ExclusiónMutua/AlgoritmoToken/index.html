@@ -4,42 +4,53 @@
         <meta charset="utf-8">
         <title>Algoritmo de token</title>
         <link rel="stylesheet" href="css/estilos.css">
+        <script src="../../libs/Concurrent.Thread.js"></script>
     </head>
     <body>
         <h1 class="titulo">Exclusión mutua: Algoritmo de token</h1>
-
         <div id="main">
             <div id="p-0" class="proceso">
                 <p class="id" id="0">#0</p>
-                <button class="accion" onclick="solicitar('0');">Solicitar</button>
-                <button class="accion" onclick="liberar('0');">Liberar</button>
-                <button class="accion" onclick="fallar('0');">Fallar</button>
+                <button class="accion" onclick="solicitar('0', this);">Solicitar</button>
+                <button class="accion noDisponible" onclick="liberar('0', this);" disabled="true">Liberar</button>
+                <button class="accion" onclick="fallar('0', this);">Fallar</button>
             </div>
             <div id="p-1" class="proceso">
                 <p class="id" id="1">#1</p>
-                <button class="accion" onclick="solicitar('1');">Solicitar</button>
-                <button class="accion" onclick="liberar('1');">Liberar</button>
-                <button class="accion" onclick="fallar('1');">Fallar</button>
+                <button class="accion" onclick="solicitar('1', this);">Solicitar</button>
+                <button class="accion noDisponible" onclick="liberar('1', this);" disabled="true">Liberar</button>
+                <button class="accion" onclick="fallar('1', this);">Fallar</button>
             </div>
             <div id="p-2" class="proceso">
                 <p class="id" id="2">#2</p>
-                <button class="accion" onclick="solicitar('2');">Solicitar</button>
-                <button class="accion" onclick="liberar('2');">Liberar</button>
-                <button class="accion" onclick="fallar('2');">Fallar</button>
+                <button class="accion" onclick="solicitar('2', this);">Solicitar</button>
+                <button class="accion noDisponible" onclick="liberar('2', this);" disabled="true">Liberar</button>
+                <button class="accion" onclick="fallar('2', this);">Fallar</button>
             </div>
             <div id="p-3" class="proceso">
                 <p class="id" id="3">#3</p>
-                <button class="accion" onclick="solicitar('3');">Solicitar</button>
-                <button class="accion" onclick="liberar('3');">Liberar</button>
-                <button class="accion" onclick="fallar('3');">Fallar</button>
+                <button class="accion" onclick="solicitar('3', this);">Solicitar</button>
+                <button class="accion noDisponible" onclick="liberar('3', this);" disabled="true">Liberar</button>
+                <button class="accion" onclick="fallar('3', this);">Fallar</button>
             </div>
             <div id="p-4" class="proceso">
                 <p class="id" id="4">#4</p>
-                <button class="accion" onclick="solicitar('4');">Solicitar</button>
-                <button class="accion" onclick="liberar('4');">Liberar</button>
-                <button class="accion" onclick="fallar('4');">Fallar</button>
+                <button class="accion" onclick="solicitar('4', this);">Solicitar</button>
+                <button class="accion noDisponible" onclick="liberar('4', this);" disabled="true">Liberar</button>
+                <button class="accion" onclick="fallar('4', this);">Fallar</button>
             </div>
         </div>
+        <ul class="info">
+            <li id="requested">Proceso que solicita recurso</li>
+            <li id="failed">Proceso que falla</li>
+            <li id="accessed">Proceso que con el token o con acceso al recurso</li>
+        </ul>
         <script src="js/render.js" charset="utf-8"></script>
+        <script src="js/circularQueue.js" charset="utf-8"></script>
+        <script src="js/app.js" charset="utf-8"></script>
+        <!-- Llamada a función para iniciar el algoritmo -->
+        <script type="text/javascript">
+            init();
+        </script>
     </body>
 </html>
