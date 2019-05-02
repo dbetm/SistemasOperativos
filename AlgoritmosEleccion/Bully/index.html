@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Algoritmo del abusón</title>
+        <link rel="stylesheet" href="css/master.css">
+        <!-- Autor: David Betancourt Montellano - @dbetm -->
+        <!-- Fecha: 01/05/2019. -->
+    </head>
+    <body>
+        <h1 class="titulo">Algoritmo del abusón (bully)</h1>
+        <div class="main">
+            <div class="proceso" id="p-0">
+                <p class="id">0</p>
+                <p class="oculto" id="estado-0">activo</p>
+                <p class="idCoordinador oculto">7</p>
+                <button class="deshabilitado" onclick="recuperar(0)" disabled>
+                    Recuperar
+                </button>
+                <button onclick="fallar(0)">Fallar</button>
+                <div class="popup" id="divPopup-0">
+                    <span id="popup-0" class="popuptext" onclick="mensaje(this);"></span>
+                </div>
+            </div>
+            <div class="proceso" id="p-1">
+                <p class="id">1</p>
+                <p class="oculto" id="estado-1">activo</p>
+                <p class="idCoordinador oculto">7</p>
+                <button class="deshabilitado" onclick="recuperar(1)" disabled>
+                    Recuperar
+                </button>
+                <button onclick="fallar(1)">Fallar</button>
+                <div class="popup" id="divPopup-1">
+                    <span id="popup-1" class="popuptext" onclick="mensaje(this);"></span>
+                </div>
+            </div>
+            <div class="proceso" id="p-2">
+                <p class="id">2</p>
+                <p class="oculto" id="estado-2">activo</p>
+                <p class="idCoordinador oculto">7</p>
+                <button class="deshabilitado" onclick="recuperar(2)" disabled>
+                    Recuperar
+                </button>
+                <button onclick="fallar(2)">Fallar</button>
+                <div class="popup" id="divPopup-2">
+                    <span id="popup-2" class="popuptext" onclick="mensaje(this);"></span>
+                </div>
+            </div>
+            <div class="proceso" id="p-3">
+                <p class="id">3</p>
+                <p class="oculto" id="estado-3">activo</p>
+                <p class="idCoordinador oculto">7</p>
+                <button class="deshabilitado" onclick="recuperar(3)" disabled>
+                    Recuperar
+                </button>
+                <button onclick="fallar(3)">Fallar</button>
+                <div class="popup" id="divPopup-3">
+                    <span id="popup-3" class="popuptext" onclick="mensaje(this);"></span>
+                </div>
+            </div>
+            <div class="proceso" id="p-4">
+                <p class="id">4</p>
+                <p class="oculto" id="estado-4">activo</p>
+                <p class="idCoordinador oculto">7</p>
+                <button class="deshabilitado" onclick="recuperar(4)" disabled>
+                    Recuperar
+                </button>
+                <button onclick="fallar(4)">Fallar</button>
+                <div class="popup" id="divPopup-4">
+                    <span id="popup-4" class="popuptext" onclick="mensaje(this);"></span>
+                </div>
+            </div>
+            <div class="proceso" id="p-5">
+                <p class="id">5</p>
+                <p class="oculto" id="estado-5">activo</p>
+                <p class="idCoordinador oculto">7</p>
+                <button class="deshabilitado" onclick="recuperar(5)" disabled>
+                    Recuperar
+                </button>
+                <button onclick="fallar(5)">Fallar</button>
+                <div class="popup" id="divPopup-5">
+                    <span id="popup-5" class="popuptext" onclick="mensaje(this);"></span>
+                </div>
+            </div>
+            <div class="proceso" id="p-6">
+                <p class="id">6</p>
+                <p class="oculto" id="estado-6">activo</p>
+                <p class="idCoordinador oculto">7</p>
+                <button class="deshabilitado" onclick="recuperar(6)" disabled>
+                    Recuperar
+                </button>
+                <button onclick="fallar(6)">Fallar</button>
+                <div class="popup" id="divPopup-6">
+                    <span id="popup-6" class="popuptext" onclick="mensaje(this);"></span>
+                </div>
+            </div>
+            <div class="proceso coordinador" id="p-7">
+                <p class="id">7</p>
+                <p class="oculto" id="estado-7">activo</p>
+                <p class="idCoordinador oculto">7</p>
+                <button class="deshabilitado" onclick="recuperar(7)" disabled>
+                    Recuperar
+                </button>
+                <button onclick="fallar(7)">Fallar</button>
+                <div class="popup" id="divPopup-7">
+                    <span id="popup-7" class="popuptext" onclick="mensaje(this);"></span>
+                </div>
+            </div>
+        </div>
+        <!-- Lógica -->
+        <script src="js/app.js" charset="utf-8"></script>
+    </body>
+</html>
