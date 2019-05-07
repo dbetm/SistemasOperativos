@@ -1,0 +1,166 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url("../img/abstract.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    text-align: center;
+    color: rgb(213, 213, 213);
+    text-shadow: 1px 2px 2px #454545;
+    background-color: rgb(130, 14, 66);
+    padding: 5px;
+}
+
+.main {
+    margin: 10px auto;
+    padding: 3px;
+    width: 900px;
+}
+
+.oculto {
+    display: none;
+}
+
+.proceso {
+    text-align: center;
+    width: 75px;
+    border-radius: 15px;
+    position: absolute;
+    background-color: #27bb67;
+    color: #ebebeb;
+    font-style: italic;
+    font-weight: bold;
+    box-shadow: 2px 3px 3px #636363;
+}
+
+.proceso button {
+    display: block;
+    text-align: center;
+    margin: 1px auto;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+button {
+    background-color: #dd4c4c;
+    color: #fff;
+    font-weight: bold;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+#p-0 {
+    top: 150px;
+    left: 350px;
+}
+
+#p-1 {
+    top: 60px;
+    left: 550px;
+}
+
+#p-2 {
+    top: 150px;
+    left: 750px;
+}
+
+#p-3 {
+    top: 300px;
+    left: 850px;
+}
+
+#p-4 {
+    top: 450px;
+    left: 750px;
+}
+
+#p-5 {
+    top: 550px;
+    left: 550px;
+}
+
+#p-6 {
+    top: 450px;
+    left: 350px;
+}
+
+#p-7 {
+    top: 300px;
+    left: 250px;
+}
+
+.coordinador {
+    background-color: #e8e641;
+    color: #000;
+}
+
+.deshabilitado {
+    background-color: #6c6c6c;
+    cursor: not-allowed;
+    display: none !important;
+}
+
+.fallando {
+    background-color: rgb(145, 44, 21);
+    color: #fff;
+}
+
+/* Para los pequeños mensajes */
+.popup {
+    padding-top: 0px;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup .popuptext {
+    font-size: 12px;
+    visibility: hidden;
+    width: auto;
+    background-color: #1b8b7a;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 2px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0%;
+    left: 0%;
+    margin-left: -50px;
+    margin-bottom: 10px;
+    font-family: fantasy;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
